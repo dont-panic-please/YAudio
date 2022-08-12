@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_48dp">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:tint">@color/grey</item>
+        <item name="android:backgroundTint">@color/design_default_color_on_primary</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="text_18sp_grey_bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

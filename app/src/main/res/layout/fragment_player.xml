@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    tools:context="ui.PlayerFragment">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_thumbnail"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_circular"
+            android:progress="67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorSize="56dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            style="@style/text_18sp_grey_bold"
+            android:maxLines="1" />
+        <TextView
+            android:id="@+id/text_author"
+            android:text="Author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/button_play_pause"
+        android:src="@drawable/ic_baseline_play_arrow_48"
+        style="@style/button_48dp"
+        android:contentDescription="@string/playOrPause"
+        android:elevation="4dp"/>
+    <ImageButton
+        android:id="@+id/button_skip_next"
+        android:src="@drawable/ic_baseline_skip_next_48"
+        style="@style/button_48dp"
+        android:contentDescription="@string/skip_next"
+        android:elevation="4dp"/>
+
+</LinearLayout>

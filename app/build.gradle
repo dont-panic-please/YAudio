@@ -35,12 +35,11 @@ android {
 }
 
 dependencies {
-    implementation "android.arch.lifecycle:extensions:1.1.1"
-    //noinspection LifecycleAnnotationProcessorWithJava8
-    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-
     implementation 'com.github.sealedtx:java-youtube-downloader:3.1.0'
 
     implementation 'androidx.core:core-ktx:1.8.0'

@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import local.yaudio.databinding.FragmentNotificationsBinding
+import local.yaudio.databinding.FragmentLibraryBinding
 
 class LibraryFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentLibraryBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class LibraryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val libararyViewModel =
-            ViewModelProvider(this).get(LibararyViewModel::class.java)
+        val libraryViewModel =
+            ViewModelProvider(this).get(LibraryViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentLibraryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        libararyViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textLibrary
+        libraryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
