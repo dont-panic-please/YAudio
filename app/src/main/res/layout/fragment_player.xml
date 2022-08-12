@@ -39,7 +39,7 @@
             style="@style/text_18sp_grey_bold"
             android:maxLines="1" />
         <TextView
-            android:id="@+id/text_author"
+            android:id="@+id/text_channel"
             android:text="Author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
